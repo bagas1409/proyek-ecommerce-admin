@@ -115,6 +115,10 @@ Contoh:
   - Request: Attach `Authorization: Bearer <token>`
   - Response: Handle 401 -> Clear token -> Redirect Login
 
+=== DEPLOY (SPA ROUTING) ===
+Jika deploy sebagai static site (Vite + React Router `BrowserRouter`), pastikan ada rewrite semua path ke `index.html`
+supaya refresh di route seperti `/users` tidak 404.
+
 === STRUKTUR FOLDER (UPDATED) ===
 src/
  ├─ api/              # Axios instance & API services
